@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         run: |
-        docker build -t layer .
+          docker build -t layer .
     container:
       image: layer
       volumes:
@@ -15,6 +15,6 @@ jobs:
     steps:
       - name: copy files from layers
         run: |
-        cp /var/lib/docker/volumes/layers/_data .
+          cp /var/lib/docker/volumes/layers/_data .
 
     
