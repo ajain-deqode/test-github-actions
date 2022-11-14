@@ -1,0 +1,6 @@
+# action.yml
+name: 'create layer'
+description: 'create lambda layer'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
