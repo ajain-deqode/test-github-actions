@@ -13,7 +13,6 @@ ADD requirements.txt .
 RUN pip3 install -r requirements.txt -t python
 
 Run zip -r python_layer.zip python
-VOLUME layers
 
 
 

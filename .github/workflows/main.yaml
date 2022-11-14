@@ -10,8 +10,8 @@ jobs:
       - name: Hello world action step
         run: |
           docker build -t layer .
-          docker run -v layers:/layers --name test1 layer
-          docker cp test1:/layers/python_layer.zip .
+          docker run -v layers:/layers --name test2 layer
+          docker cp test2:/layers/python_layer.zip layers
 
 
     
