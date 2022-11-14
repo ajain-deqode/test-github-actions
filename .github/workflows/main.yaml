@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         run: |
-          docker build -t layer .
+          docker build -t layer Dockerfile
           docker run -v layers:/layers layer 
 
 
