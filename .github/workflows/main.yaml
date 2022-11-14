@@ -5,9 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     name: create lambda layer
     steps:
+      - name: checkout source code
+        uses: actions/checkout@v1
       - name: Hello world action step
         run: |
-          docker build -t layer Dockerfile
+          docker build -t layer .
           docker run -v layers:/layers layer 
 
 
